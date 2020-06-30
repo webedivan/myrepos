@@ -120,3 +120,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# Preparar para producción
+if 'projects/puntoVenta' in os.getcwd():
+    ALLOWED_HOSTS = ['157.245.1.42']
