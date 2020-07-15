@@ -17,6 +17,7 @@ class Producto (models.Model):
     FechaVencimiento = models.DateTimeField()
     Precio = models.DecimalField(max_digits=6 ,decimal_places=2)
     Activo = models.BooleanField(default=True)
+    Stock  = models.PositiveIntegerField
     def __str__(self):
         return f'{self.Descripcion}'
 

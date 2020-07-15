@@ -15,7 +15,7 @@ class ClienteAdmin(admin.ModelAdmin):
 
 @admin.register(Producto)
 class ProductoAdmin(admin.ModelAdmin):
-    list_display = ['id', 'Descripcion','Presentacion','FechaVencimiento', 'Precio', 'Activo']
+    list_display = ['id', 'Descripcion', 'Presentacion', 'FechaVencimiento', 'Precio', 'Activo', 'Stock']
     search_fields = ['descripcion']
 
 class DetalleVentaInline(admin.TabularInline):
